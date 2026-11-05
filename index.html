@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Gallery - Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Colored circles behind the glass -->
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+
+  <header class="header">
+    <h1>Glass Gallery</h1>
+    <p>Choose a photo from the list</p>
+  </header>
+
+  <main class="wrapper">
+
+    <!-- Small photos (created by JavaScript) -->
+    <div class="all-imgs" id="thumbnails"></div>
+
+    <!-- Big photo -->
+    <section class="current-place">
+      <div class="current-image">
+        <img id="big-image" src="" alt="">
+
+        <button class="nav-btn prev" id="prev" aria-label="Previous photo">&#10094;</button>
+        <button class="nav-btn next" id="next" aria-label="Next photo">&#10095;</button>
+
+        <span class="counter" id="counter"></span>
+
+        <div class="caption">
+          <h2 id="title"></h2>
+          <p id="description"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
